@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiny5&display=swap" rel="stylesheet">
+	<title> Portfolio </title>
+</head>
+<body>
+
+<header>
+	<nav>
+		<div id = "btnCont">
+			<p class = "btn active" id = "homeBtn"> Home </p>
+			<p class = "btn" id = "projectsBtn"> Projects </p>
+			<p class = "btn" id = "aboutBtn"> About </p>
+			<p class = "btn" id = "contactBtn"> Contact </p>
+		</div>
+		<div id = "linkCont">
+			<a href = "https://ie.linkedin.com/" target = "_blank">
+				<img src = "public/linkedin.svg">
+			</a>
+			<a href = "https://github.com/tkielkielson/thomasN" target = "_blank">
+				<img src = "public/github.svg">
+			</a>
+		</div>
+	</nav>
+
+	<div id = "headingTextCont">
+		<p id = "greet"> Hello there, I'm Tom. </p>	
+		<p id = "intro"> I am an aspiring software engineer and a third year computer science and software engineering student at Maynooth University. </p>
+	</div>
+
+	<section id = "skills">
+		<figure>
+			<img src = "public/java.svg">
+			<figcaption class="caption">Java</figcaption>
+		</figure>
+		<figure>
+			<img src = "public/javascript.svg">
+			<figcaption class="caption">Javascript</figcaption>
+		</figure>
+		<figure class = "shiftUp">
+			<img src = "public/css.svg">
+			<figcaption class="caption">CSS</figcaption>
+		</figure>
+		<figure class = "shiftUp">
+			<img src = "public/html.svg">
+			<figcaption class="caption">HTML</figcaption>
+		</figure>
+		<figure class = "shiftUp">
+			<img src = "public/node.svg">
+			<figcaption class="caption">Node.js</figcaption>
+		</figure>
+		<figure>
+			<img src = "public/postgresql.svg">
+			<figcaption class="caption">PostgreSQL</figcaption>
+		</figure>
+		<figure>
+			<img src = "public/mysql.png">
+			<figcaption class="caption">MySQL</figcaption>
+		</figure>
+		<figure>
+			<img src = "public/mongodb.png">
+			<figcaption class="caption">MongoDB</figcaption>
+		</figure>
+		<figure>
+			<img src = "public/linux.png">
+			<figcaption class="caption">Linux</figcaption>
+		</figure>
+
+	</section>
+</header>
+
+
+
+<main>
+	<div class = "projectPage">
+		<div class = "titleCont">
+			<h1 id = "title"> Projects </h1>
+		</div>
+
+		<section class = "projects">
+
+			<article class = "project">
+				<div class = "imgCont">
+					<img class = "img" src = "public/cube.png"  style = "aspect-ratio: 1/1">
+					<div class = "fade">
+						<p>A web application which simulates a functional 3D model of a rubix cube. This project is currently a work in progress and my goal is to implement a solving function.</p>
+
+						<a href = "https://github.com/tkielkielson/thomasN/tree/main/rubix-cube" target = "_blank">
+							<img src = "public/githubDark.svg" class = "projectLink">
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class = "smallProjects">
+
+				<div class = "project">
+					<div class = "imgCont">
+						<img class = "img" src = "public/simon.png" style = "aspect-ratio: 2/1">
+						<div class = "fade">
+							<p>A web application which simulates a functional 3D model of a rubix cube. This project is currently a work in progress and my goal is to implement a solving function.</p>
+
+							<a href = "https://github.com/tkielkielson/thomasN/tree/main/rubix-cube" target = "_blank">
+								<img src = "public/githubDark.svg" class = "projectLink">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class = "project">
+					<div class = "imgCont">
+						<img class = "img" src = "public/pyramid.png" style = "aspect-ratio: 2/1">
+						<div class = "fade">
+							<p>A web application which simulates a functional 3D model of a rubix cube. This project is currently a work in progress and my goal is to implement a solving function.</p>
+
+							<a href = "https://github.com/tkielkielson/thomasN/tree/main/rubix-cube" target = "_blank">
+								<img src = "public/githubDark.svg" class = "projectLink">
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
+
+<!-- 	<section class = "projects">
+		<article class = "smallProjects">
+			<div class = "project">
+				<div class = "imgCont">
+					<img class = "img" src = "public/table.png" style = "aspect-ratio: 2/1">
+					<div class = "fade">
+						<p>A web application which simulates a functional 3D model of a rubix cube. This project is currently a work in progress and my goal is to implement a solving function.</p>
+
+						<a href = "https://github.com/tkielkielson/thomasN/tree/main/rubix-cube" target = "_blank">
+							<img src = "public/githubDark.svg" class = "projectLink">
+						</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section> -->
+
+	<hr class = "break">
+
+	<section id = "aboutMe">
+		<div class = "titleCont">
+			<h1> About Me </h1>
+		</div>
+
+		<article id = "about">
+			<img src = "public/me.jpg">
+
+			<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus conubia quisque cursus posuere semper. Potenti congue platea tristique netus, dapibus montes. Magnis ligula felis ultrices vivamus sit. Ultricies aliquet eu porttitor scelerisque integer fringilla arcu. Nisi venenatis suspendisse mus inceptos suscipit pretium lacus. Eros arcu molestie mattis pretium, accumsan porttitor. Amet volutpat congue dapibus felis nunc magna efficitur pellentesque netus. Consequat nulla venenatis purus morbi bibendum facilisis. Habitasse mollis maximus porta inceptos est ut taciti.
+			<br><br>
+			Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus conubia quisque cursus posuere semper. Potenti congue platea tristique netus, dapibus montes. Magnis ligula felis ultrices vivamus sit. Ultricies aliquet eu porttitor scelerisque integer fringilla arcu. Nisi venenatis suspendisse mus inceptos suscipit pretium lacus
+			</p>
+		</article>
+	</section>
+</main>
+
+<section id = "contact">
+	<form>
+		<div>
+		    <h1> Contact Me! </h1>
+			<textarea id = "nameInput" placeholder = "Name:"></textarea>
+			<textarea id = "emailInput" placeholder = "Email:"></textarea>
+		</div>
+		<div>
+			<textarea id = "messageInput" placeholder = "Message:"></textarea>
+			<input type = "submit">
+		</div>
+	</form>
+</section>
+
+<footer>
+
+</footer>
+
+
+
+<script src = "script.js"> </script>
+</body>
+</html>

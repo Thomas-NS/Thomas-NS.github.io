@@ -1,0 +1,293 @@
+::-webkit-scrollbar {
+  	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  	background: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  	background: #c2c2c2;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #1b1c1b;
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+	color: #c2c2c2;
+}
+
+header {
+	background-image: url("public/forest.jpg");
+	background-size: cover;
+	width: 100%;
+	user-select: none;
+}
+
+nav {
+	display: flex;
+	height: 55px;
+	width: 100%;
+	background-color: #1b1c1b;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+main {
+	display: flex;
+	min-height: 2400px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+section, article, div {
+	display: flex;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+footer {
+	height: 175px;
+	background-color: #1b1c1b;
+}
+
+#greet {
+	padding-top: 100px;
+	font-size: 100px;
+	text-shadow: 10px 5px 5px #1b1c1b;
+	margin-bottom: 50px;
+}
+
+#intro {
+	font-size: 30px;
+	font-family: "Merriweather", serif;
+	max-width: 775px;
+	padding-left: 5px;
+}
+
+#headingTextCont {
+	flex-direction: column;
+	margin-left: 10%;
+	font-weight: 600;
+	margin-top: 0px;
+}
+
+.btn {
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 1rem;
+	user-select: none;
+}
+
+#btnCont, #linkCont { 
+	display: flex;
+	align-items: center;
+	margin: 20px;
+	width: 100%;
+}
+
+#linkCont {
+	justify-content: flex-end;
+	gap: 30px;
+}
+
+#btnCont {
+	justify-content: flex-start;
+	gap: 50px;
+}
+
+#skills {
+	margin-top: 150px;
+	gap: 25px;
+	justify-content: center;
+	z-index: 99;
+	flex-wrap: wrap;
+}
+
+.caption {
+	font-weight: 800;
+	text-align: center;
+}
+ 
+/*.shiftUp {
+	position: relative;
+	bottom: 4px;
+}
+*/
+
+.titleCont {
+	justify-content: center;
+	width: 100%;
+	user-select: none;
+}
+
+.img {
+	max-width: 600px;
+  	object-fit: cover;
+  	border-radius: 25px;
+  	border: 30px solid #111211;
+  	transition: .5s ease;
+}
+
+.imgCont {
+	position: relative;
+	display: flex;
+	margin: 30px;
+	background-color: white;
+	border-radius: 30px;
+}
+
+.projectPage {
+	flex-direction: column;
+}
+
+.projects {
+	gap: 150px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.smallProjects {
+	flex-direction: column;
+	margin-bottom: 80px;
+}
+
+.fade {
+   	opacity: 0;
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	width: 100%;
+  	height: 100%;
+   	text-align: center;
+   	justify-content: center;
+   	align-items: center;
+   	flex-direction: column;
+   	font-size: 1.25rem;
+   	font-weight: 500;
+   	color: #1b1c1b;
+   	padding: 100px;
+   	box-sizing: border-box; 
+}
+
+.active {
+	color: #687e61;
+}
+
+.imgCont:hover .img {
+ 	opacity: 0.5;
+}
+
+.imgCont:hover .fade {
+  	opacity: 1;
+}
+
+#aboutMe {
+	width: 80%;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#about {
+	gap: 100px;
+}
+
+#about img {
+	max-width: 600px;
+	aspect-ratio: 1/1;
+	border-radius: 25px;
+}
+
+#about p {
+	font-size: 25px;
+}
+
+.break {
+	width: 95%;
+	border: 2px solid #2a2b2a;
+}
+
+#contact {
+	display: flex;
+	min-height: 800px;
+	background-image: url("public/leaves.png");
+	align-items: center;
+}
+
+#contact h1 {
+	color: #3f4d3a;
+	font-size: 100px;
+	font-weight: 600;
+	margin: 0 0 75px 0;
+}
+
+textarea, input {
+	width: 500px;
+	height: 30px;
+	background-color: transparent;
+	border: 3px solid black;
+	resize: none;
+	font-size: 1.5rem;
+	display: flex;
+	padding: 5px;
+	margin-left: 25px;
+}
+
+textarea:focus {
+	outline: none;
+	background-color: rgb(255, 255, 255, 0.3);
+}
+
+textarea::placeholder {
+	color: #3c3d3c;
+}
+
+input:hover {
+	background-color: rgb(255, 255, 255, 0.3);
+	cursor: pointer;
+}
+
+form {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 150px;
+	flex-wrap: wrap;
+}
+
+form div {
+	flex-direction: column;
+	gap: 50px;
+}
+
+form div:nth-child(2) {
+	align-items: flex-end;
+}
+
+#messageInput {
+	height: 300px;
+	margin-top: 70px;
+}
+
+input {
+	width: 200px;
+	height: 40px;
+}
