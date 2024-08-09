@@ -1,17 +1,20 @@
+:root {
+  --main-bg-color: #1b1c1b;
+  --text-color: #c2c2c2;
+  --accent-color: #687e61;
+  --font-main: "Rubik", sans-serif;
+  --font-alt: "Merriweather", serif;
+  --scrollbar-width: 10px;
+  --scrollbar-hover-color: #c2c2c2;
+  --header-background-image: url("public/forest.jpg");
+}
+
 ::-webkit-scrollbar {
-  	width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  	background: none;
-}
-
-::-webkit-scrollbar-thumb {
-  	background: none;
+  width: var(--scrollbar-width);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  	background: #c2c2c2;
+  background: var(--scrollbar-hover-color);
 }
 
 html {
@@ -20,15 +23,15 @@ html {
 
 body {
 	overflow-x: hidden;
-	background-color: #1b1c1b;
 	margin: 0;
 	padding: 0;
-	font-family: "Rubik", sans-serif;
-	color: #c2c2c2;
+	background-color: var(--main-bg-color);
+  	color: var(--text-color);
+  	font-family: var(--font-main);
 }
 
 header {
-	background-image: url("public/forest.jpg");
+	background-image: var(--header-background-image);
 	background-size: cover;
 	width: 100%;
 	user-select: none;
@@ -77,7 +80,7 @@ footer {
 
 #intro {
 	font-size: 30px;
-	font-family: "Merriweather", serif;
+	font-family: var(--font-alt);
 	max-width: 775px;
 	padding-left: 5px;
 }
@@ -126,11 +129,10 @@ footer {
 	text-align: center;
 }
  
-/*.shiftUp {
+.shiftUp {
 	position: relative;
 	bottom: 4px;
 }
-*/
 
 .titleCont {
 	justify-content: center;
@@ -156,6 +158,7 @@ footer {
 
 .projectPage {
 	flex-direction: column;
+	justify-content: center;
 }
 
 .projects {
@@ -167,7 +170,6 @@ footer {
 
 .smallProjects {
 	flex-direction: column;
-	margin-bottom: 80px;
 }
 
 .fade {
@@ -212,7 +214,6 @@ footer {
 
 #about img {
 	max-width: 600px;
-	aspect-ratio: 1/1;
 	border-radius: 25px;
 }
 
@@ -230,6 +231,7 @@ footer {
 	min-height: 800px;
 	background-image: url("public/leaves.png");
 	align-items: center;
+	justify-content: center;
 }
 
 #contact h1 {
@@ -266,10 +268,10 @@ input:hover {
 }
 
 form {
-	margin: auto;
+	margin-bottom: 50px;	
 	display: flex;
 	flex-direction: row;
-	gap: 150px;
+	gap: 75px;
 	flex-wrap: wrap;
 }
 

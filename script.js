@@ -10,12 +10,6 @@ about.addEventListener("click", scroll);
 contact.addEventListener("click", scroll);
 window.addEventListener("scroll", handleScroll);
 
-/*let contactInputs = document.querySelectorAll('textarea');
-contactInputs.forEach(input => {
-	input.addEventListener("click", function(){
-		event.target.innerHTML = "";
-	});
-});*/
 
 //*********change to be based off of elements rather than coords*****************
 
