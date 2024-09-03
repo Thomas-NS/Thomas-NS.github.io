@@ -49,16 +49,15 @@ nav {
 }
 
 main {
-	display: flex;
 	min-height: 2700px;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	gap: 100px;
 }
 
-section, article, div {
+main, footer, section, article, div {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -68,23 +67,26 @@ h1 {
 }
 
 footer {
-	height: 175px;
+	height: 30px;
+	display: flex;
 	background-color: #1b1c1b;
+	justify-content: flex-end;
 }
 
 a {
 	text-decoration: none;
+	color: #687e61;
 }
 
 #greet {
 	padding-top: 100px;
-	font-size: 100px;
+	font-size: 6.25rem;
 	text-shadow: 10px 5px 5px #1b1c1b;
 	margin-bottom: 50px;
 }
 
 #intro {
-	font-size: 30px;
+	font-size: 1.9rem;
 	font-family: var(--font-alt);
 	max-width: 775px;
 	padding-left: 5px;
@@ -94,18 +96,17 @@ a {
 	flex-direction: column;
 	margin-left: 10%;
 	font-weight: 600;
+	align-items: flex-start;
 }
 
 .btn {
 	cursor: pointer;
 	font-weight: 500;
-	font-size: 1rem;
 	user-select: none;
 }
 
 #btnCont, #linkCont { 
 	display: flex;
-	align-items: center;
 	margin: 20px;
 	width: 100%;
 }
@@ -113,6 +114,10 @@ a {
 #linkCont {
 	justify-content: flex-end;
 	gap: 30px;
+}
+
+.active {
+	color: #687e61;
 }
 
 #btnCont {
@@ -123,7 +128,6 @@ a {
 #skills {
 	margin-top: 150px;
 	gap: 25px;
-	justify-content: center;
 	z-index: 99;
 	flex-wrap: wrap;
 }
@@ -139,7 +143,6 @@ a {
 }
 
 .titleCont {
-	justify-content: center;
 	width: 100%;
 	user-select: none;
 }
@@ -162,13 +165,10 @@ a {
 
 .projectPage {
 	flex-direction: column;
-	justify-content: center;
 }
 
 .projects {
 	gap: 150px;
-	align-items: center;
-	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -183,9 +183,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   font-size: 1.25rem;
   font-weight: 800;
@@ -194,9 +191,6 @@ a {
   box-sizing: border-box; 
 }
 
-.active {
-	color: #687e61;
-}
 
 .imgCont:hover .img {
  	opacity: 0.4;
@@ -216,7 +210,6 @@ a {
 #about {
 	gap: 100px;
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 #about img {
@@ -235,15 +228,13 @@ a {
 
 #contact {
 	display: flex;
-	min-height: 800px;
+	min-height: 900px;
 	background-image: url("public/leaves.png");
-	align-items: center;
-	justify-content: center;
 }
 
 #contact h1 {
 	color: #3f4d3a;
-	font-size: 100px;
+	font-size: 6.25rem;
 	font-weight: 600;
 	margin: 0 0 75px 0;
 }
@@ -284,6 +275,8 @@ form {
 form div {
 	flex-direction: column;
 	gap: 50px;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 form div:nth-child(2) {
@@ -298,5 +291,9 @@ form div:nth-child(2) {
 input {
 	width: 200px;
 	height: 40px;
+}
+
+footer p {
+	padding-left: 20px;
 }
 
