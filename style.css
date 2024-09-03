@@ -26,8 +26,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--main-bg-color);
-  	color: var(--text-color);
-  	font-family: var(--font-main);
+  color: var(--text-color);
+  font-family: var(--font-main);
 }
 
 header {
@@ -50,7 +50,7 @@ nav {
 
 main {
 	display: flex;
-	min-height: 2400px;
+	min-height: 2700px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -61,6 +61,7 @@ section, article, div {
 	display: flex;
 }
 
+
 h1 {
 	font-size: 3rem;
 	font-weight: 800;
@@ -69,6 +70,10 @@ h1 {
 footer {
 	height: 175px;
 	background-color: #1b1c1b;
+}
+
+a {
+	text-decoration: none;
 }
 
 #greet {
@@ -89,7 +94,6 @@ footer {
 	flex-direction: column;
 	margin-left: 10%;
 	font-weight: 600;
-	margin-top: 0px;
 }
 
 .btn {
@@ -141,11 +145,11 @@ footer {
 }
 
 .img {
-	max-width: 600px;
-  	object-fit: cover;
-  	border-radius: 25px;
-  	border: 30px solid #111211;
-  	transition: .5s ease;
+	width: 600px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 30px solid #111211;
+  transition: .5s ease;
 }
 
 .imgCont {
@@ -173,21 +177,21 @@ footer {
 }
 
 .fade {
-   	opacity: 0;
-   	position: absolute;
-   	top: 0;
-   	left: 0;
-   	width: 100%;
-  	height: 100%;
-   	text-align: center;
-   	justify-content: center;
-   	align-items: center;
-   	flex-direction: column;
-   	font-size: 1.25rem;
-   	font-weight: 500;
-   	color: #1b1c1b;
-   	padding: 100px;
-   	box-sizing: border-box; 
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1b1c1b;
+  padding: 100px;
+  box-sizing: border-box; 
 }
 
 .active {
@@ -195,7 +199,7 @@ footer {
 }
 
 .imgCont:hover .img {
- 	opacity: 0.5;
+ 	opacity: 0.4;
 }
 
 .imgCont:hover .fade {
@@ -205,20 +209,23 @@ footer {
 #aboutMe {
 	width: 80%;
 	flex-direction: column;
-	justify-content: flex-start;
+	min-height: 700px;
+	gap: 50px;
 }
 
 #about {
 	gap: 100px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #about img {
-	max-width: 600px;
-	border-radius: 25px;
+	scale: 1.5;
 }
 
 #about p {
-	font-size: 25px;
+	font-size: 1.3rem;
+	max-width: 1000px;
 }
 
 .break {
@@ -270,7 +277,6 @@ input:hover {
 form {
 	margin-bottom: 50px;	
 	display: flex;
-	flex-direction: row;
 	gap: 75px;
 	flex-wrap: wrap;
 }
@@ -293,3 +299,4 @@ input {
 	width: 200px;
 	height: 40px;
 }
+
