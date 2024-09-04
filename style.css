@@ -163,12 +163,11 @@ a {
 	border-radius: 30px;
 }
 
-.projectPage {
+#projectPage {
 	flex-direction: column;
 }
 
 .projects {
-	gap: 150px;
 	flex-wrap: wrap;
 }
 
@@ -191,7 +190,6 @@ a {
   box-sizing: border-box; 
 }
 
-
 .imgCont:hover .img {
  	opacity: 0.4;
 }
@@ -204,7 +202,7 @@ a {
 	width: 80%;
 	flex-direction: column;
 	min-height: 700px;
-	gap: 50px;
+	gap: 80px;
 }
 
 #about {
@@ -219,6 +217,7 @@ a {
 #about p {
 	font-size: 1.3rem;
 	max-width: 1000px;
+	padding-bottom: 30px;
 }
 
 .break {
