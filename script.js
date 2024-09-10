@@ -45,20 +45,25 @@ function scroll(event){
 	highlightPageBtn(event.target);
 }
 
+function handleScroll() {
+    let scrollPosition = window.scrollY;
+    const homeTop = homeElement.offsetTop;
+    const projectsTop = projectsElement.offsetTop;
+    const aboutTop = aboutElement.offsetTop;
+    const contactTop = contactElement.offsetTop;
 
-function handleScroll(){
-	if(window.scrollY <= homeElement.getBoundingClientRect().top){
-		highlightPageBtn(home);
-	}
-	else if(window.scrollY > projectsElement.getBoundingClientRect().top && window.scrollY < projectsElement.getBoundingClientRect().bottom){
-		highlightPageBtn(projects);
-	}
-	else if(window.scrollY > aboutElement.getBoundingClientRect().top && window.scrollY < aboutElement.getBoundingClientRect().bottom){
-		highlightPageBtn(about);
-	}
-	else if(window.scrollY > contactElement.getBoundingClientRect().top){
-	 	highlightPageBtn(contact);
-	}
+    if (scrollPosition >= homeTop && scrollPosition < projectsTop - 200) {
+        highlightPageBtn(home);
+    } 
+    else if (scrollPosition >= projectsTop - 200 && scrollPosition < aboutTop - 400) {
+        highlightPageBtn(projects);
+    } 
+    else if (scrollPosition >= aboutTop - 400 && scrollPosition < contactTop - 100) {
+        highlightPageBtn(about);
+    } 
+    else if (scrollPosition >= contactTop - 100) {
+        highlightPageBtn(contact);
+    }
 }
 
 function highlightPageBtn(page){
